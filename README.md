@@ -6,6 +6,4 @@
 <b>Pequena demonstração de um bot para telegram em Python</b>
 </br>
 
-<strong>Biblioteca usada:</strong> pytelegrambotapi
-
 
