@@ -25,10 +25,12 @@
 
 <p>Código: </p>
 
-(em botCredentials.py):
+  (em botCredentials.py):
+
     api_key = 'chave api'
 
-(em TelegramBot.py):
+  (em TelegramBot.py):
+
     bot = telebot.TeleBot(botCredentials.api_key) # Passa a chave do Telegram para a biblioteca
 
     @bot.message_handler('/start')                # Define o comando que o bot ira responder;
