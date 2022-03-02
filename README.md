@@ -40,3 +40,5 @@
 <p>Após fazer tudo isso:</p>
 
     python TelegramBot.py
+
+<p>Assim que iniciar o bot, dirija-se até o contato do seu bot cujo foi criado no FatherBot e dê /start para que receba o retorno do bot!</p>
