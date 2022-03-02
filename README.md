@@ -17,17 +17,26 @@
 <p>Importando a biblioteca Telebot:</p>
 
     import telebot
+    import botCredentials
+
+<p>Evitando exportar sua chave API por engano pro repositório Git: </p>
+
+    mv _gitignore .gitignore
 
 <p>Código: </p>
 
+  (em botCredentials.py):
+
     api_key = 'chave api'
 
-    bot = telebot.TeleBot(api_key)             # Passa a chave do Telegram para a biblioteca
+  (em TelegramBot.py):
 
-    @bot.message_handler('/start')             # Define o comando que o bot ira responder;
-    def comando(mensagem):                     # Criando uma funcao para a resposta;
-        bot.reply_to(mensagem, "Testando")     # Envio da resposta do bot;
+    bot = telebot.TeleBot(botCredentials.api_key) # Passa a chave do Telegram para a biblioteca
+
+    @bot.message_handler('/start')                # Define o comando que o bot ira responder;
+    def comando(mensagem):                        # Criando uma funcao para a resposta;
+        bot.reply_to(mensagem, "Testando")        # Envio da resposta do bot;
 
 <p>Após fazer tudo isso:</p>
 
-    python bot.py
+    python TelegramBot.py
