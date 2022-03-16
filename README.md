@@ -36,6 +36,7 @@
     @bot.message_handler('/start')                # Define o comando que o bot ira responder;
     def comando(mensagem):                        # Criando uma funcao para a resposta;
         bot.reply_to(mensagem, "Testando")        # Envio da resposta do bot;
+    bot.polling()                                 # Comando para iniciar o bot e ativar a API;
 
 <p>Após fazer tudo isso:</p>
 
